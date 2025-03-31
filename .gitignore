@@ -1,0 +1,46 @@
+# Archivos de Python generados
+*.pyc
+__pycache__/
+
+# Base de datos SQLite (si usas SQLite para desarrollo)
+*.sqlite3
+
+# Entornos virtuales
+.venv/
+venv/
+
+# Variables de entorno
+.env
+local_settings.py
+secret_key.txt
+
+# Archivos de registro
+*.log
+
+# Archivos de copia de seguridad
+*.bak
+*.swp
+
+# Archivos de sistema operativo macOS
+.DS_Store
+
+# Archivos de miniaturas de Windows
+Thumbs.db
+
+# Carpetas de medios y estáticos (si no se deben versionar)
+/media/
+/static/
+
+# Archivos de configuración de IDEs (opcional)
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.code-workspace
+
+# Archivos de compilación (opcional)
+build/
+dist/
+*.egg-info/
