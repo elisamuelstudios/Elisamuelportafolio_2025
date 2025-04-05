@@ -28,17 +28,15 @@ def contact (request):
 
         # Enviar el correo
         send_mail(
-            subject=f"Mensaje de Fucaesp.org: {asunto}",
+            subject=f"Mensaje de elisamuel04.pythonanywhere.com/: {asunto}",
             message=mensaje_completo,
             from_email=email,  # Remitente (puede ser el del usuario)
-            recipient_list=["fucaesp@gmail.com"],  # Destinatario
+            recipient_list=["elisamuelvalera@gmail.com"],  # Destinatario
             fail_silently=False,
         )
-
-        messages.success(request, "¡Tu mensaje ha sido enviado con éxito!", extra_tags='contacto')
-        return redirect("contacto")  # Redirige a la página de contacto
-
-    return render(request, "contacto.html")  # Asegúrate de tener esta plantilla
+        messages.success(request, "¡Tu mensaje ha sido enviado con éxito!", extra_tags='contact')
+        return redirect("contact")
+    return render(request, "contact.html")
 
 def portfolio(request): 
     return render(request, 'portfolio.html')

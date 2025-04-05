@@ -28,6 +28,15 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'  # Servidor SMTP de Gmail
+EMAIL_PORT = 587  # Puerto para TLS
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'elisamuelvalera@gmail.com'  # Tu correo de Gmail
+EMAIL_HOST_PASSWORD = 'qlztugvtcyottrlj'
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
+
 # Application definition
 
 INSTALLED_APPS = [
