@@ -11,9 +11,8 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
 
-  <!-- Favicons -->
-  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
-  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+  <!-- Logo -->
+  <link href="{% static 'assets/img/logo.png' %}" rel="icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -38,7 +37,8 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="{% url 'index' %}" class="logo d-flex align-items-center">
-        <h1 class="sitename">EVS</h1>
+        <img src="{% static 'assets/img/v.png' %}" alt="EVS">
+        <!-- <h1 class="sitename">EVS</h1> -->
       </a>
 
       <nav id="navmenu" class="navmenu">
