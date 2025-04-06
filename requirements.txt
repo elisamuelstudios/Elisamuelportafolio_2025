@@ -1,0 +1,6 @@
+asgiref==3.8.1
+certifi==2025.1.31
+Django==5.1.7
+django-use-email-as-username==1.4.0
+pillow==11.1.0
+sqlparse==0.5.3
