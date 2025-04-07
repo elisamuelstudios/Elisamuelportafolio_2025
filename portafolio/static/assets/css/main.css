@@ -684,11 +684,8 @@ section,
 
 .hero img {
   position: absolute;
-  inset: 0;
+  right: -1px;
   display: block;
-  /* width: 100%; */
-  /* height: 100%; */
-  /* object-fit: cover; */
   z-index: 1;
 }
 
@@ -744,15 +741,6 @@ section,
     font-size: 20px;
   }
 
-  .hero img {
-    inset: 0 0 0 -60rem;
-  }
-}
-
-@media (max-width: 450px) {
-  .hero img {
-    inset: 0 0 0 -80rem;
-  }
 }
 
 /*--------------------------------------------------------------
