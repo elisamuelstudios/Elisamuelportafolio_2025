@@ -1,0 +1,55 @@
+
+<header id="header" class="header d-flex align-items-center fixed-top">
+  <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+    <a href="/" class="logo d-flex align-items-center">
+      <img src="assets/img/v.png" alt="EVS">
+      <h1 class="sitename">EVS</h1>
+    </a>
+
+  <nav id="navmenu" class="navmenu" [ngClass]="{'navmenu-mobile': isMobileMenuOpen}">
+    <ul>
+      <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="closeMobileMenu()">{{ 'HOME' | translate }}</a></li>
+      <li><a routerLink="/about" routerLinkActive="active" (click)="closeMobileMenu()">{{ 'ABOUT' | translate }}</a></li>
+      <li><a routerLink="/resume" routerLinkActive="active" (click)="closeMobileMenu()">{{ 'RESUME' | translate }}</a></li>
+      <li><a routerLink="/portfolio" routerLinkActive="active" (click)="closeMobileMenu()">{{ 'PORTFOLIO' | translate }}</a></li>
+      <li><a routerLink="/contact" routerLinkActive="active" (click)="closeMobileMenu()">{{ 'CONTACT' | translate }}</a></li>
+    </ul>
+    <i class="mobile-nav-toggle d-xl-none bi bi-list" (click)="toggleMobileMenu()"></i>
+
+  </nav>
+    <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+      <mat-button-toggle value="En" (click)="changeLang('en')">En</mat-button-toggle>
+      <mat-button-toggle value="Es" (click)="changeLang('es')">Es</mat-button-toggle>
+    </mat-button-toggle-group>
+  </div>
+</header>
+
+<router-outlet></router-outlet>
+
+<footer id="footer" class="footer dark-background">
+  <div class="container">
+    <h3 class="sitename">{{ 'SOCIAL' | translate }}</h3>
+    <p>{{ 'SUBSCRIBE' | translate }}</p>
+    <div class="social-links d-flex justify-content-center">
+      <a href="https://www.youtube.com/@ElisamuelStudios" target="_blank"><i class="bi bi-youtube"></i></a>
+      <a href="https://github.com/Elisamuel04" target="_blank"><i class="bi bi-github"></i></a>
+      <a href="https://www.linkedin.com/in/elisamuel/" target="_blank"><i class="bi bi-linkedin"></i></a>
+    </div>
+    <div class="container">
+      <div class="copyright">
+        <span>2025</span> <strong class="px-1 sitename">Elisamuel Valera</strong>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll Top -->
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"
+   [class.active]="showScrollTopButton"
+   (click)="scrollToTop($event)">
+  <i class="bi bi-arrow-up-short"></i>
+</a>
+
+<!-- Preloader -->
+<div id="preloader" *ngIf="showPreloader"></div>
