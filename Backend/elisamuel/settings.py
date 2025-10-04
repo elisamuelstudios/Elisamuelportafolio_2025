@@ -24,7 +24,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = config("DEBUG", default=False, cast=bool)
+
 
 ALLOWED_HOSTS = ['elisamuelstudios.com']
 
@@ -151,10 +152,10 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'staticfiles')]  # Directorio donde se encuentran los archivos estáticos durante el desarrollo
+#STATICFILES_DIRS = [os.path.join(BASE_DIR, 'staticfiles')]  # Directorio donde se encuentran los archivos estáticos durante el desarrollo
 
 # Ruta donde collectstatic pondrá los archivos
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
