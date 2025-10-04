@@ -67,14 +67,14 @@ MIDDLEWARE = [
 
 # Para permitir peticiones desde Angular (localhost:4200)
 CSRF_TRUSTED_ORIGINS = [
-    "https://elisamuel04.pythonanywhere.com",
+    "https://elisamuelstudios.com",
     "http://localhost:4200", # ¡MUY IMPORTANTE para desarrollo local con Angular!
     "http://127.0.0.1:8000", # También puede ser útil si tu navegador usa 127.0.0.1
 ]
 
 # Si estás usando CORS headers (opcional pero recomendado)
 CORS_ALLOWED_ORIGINS = [
-    "https://elisamuel04.pythonanywhere.com",
+    "https://elisamuelstudios.com",
     "http://localhost:4200", # ¡MUY IMPORTANTE para desarrollo local con Angular!
     "http://127.0.0.1:8000", # También puede ser útil si tu navegador usa 127.0.0.1
 ]
