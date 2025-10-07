@@ -42,5 +42,4 @@ Thumbs.db
 
 # Archivos de compilación (opcional)
 build/
-dist/
 *.egg-info/
