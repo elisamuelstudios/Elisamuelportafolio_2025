@@ -4,6 +4,7 @@ import { TranslatePipe } from '../../translate.pipe';
 import { TranslateService } from '../../translate.service';
 import { CommonModule } from '@angular/common';
 import GLightbox from 'glightbox';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-portfolio',
@@ -11,7 +12,8 @@ import GLightbox from 'glightbox';
   imports: [
     ScrollAnimationDirective,
     TranslatePipe,
-    CommonModule
+    CommonModule, 
+    RouterLink
   ],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.css'

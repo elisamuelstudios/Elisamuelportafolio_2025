@@ -5,6 +5,7 @@ import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angula
 import { HttpClient, HttpClientModule } from '@angular/common/http'; // <--- Import HttpClientModule
 import { TranslatePipe } from '../../translate.pipe';
 import { TranslateService } from '../../translate.service';
+import { RouterLink } from "@angular/router";
 
 @Component({
   selector: 'app-contact',
@@ -14,8 +15,9 @@ import { TranslateService } from '../../translate.service';
     CommonModule,
     ReactiveFormsModule,
     TranslatePipe,
-    HttpClientModule // <--- ADD THIS LINE
-  ],
+    HttpClientModule,
+    RouterLink
+],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
 })

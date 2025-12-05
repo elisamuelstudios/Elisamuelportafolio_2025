@@ -2,13 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import { ScrollAnimationDirective } from '../../directives/scroll-animation.directive';
 import { TranslatePipe } from '../../translate.pipe';
 import { TranslateService } from '../../translate.service';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-resume',
   standalone: true,
   imports: [
     ScrollAnimationDirective,
-    TranslatePipe
+    TranslatePipe,
+    RouterLink
   ],
   templateUrl: './resume.component.html',
   styleUrl: './resume.component.css'
